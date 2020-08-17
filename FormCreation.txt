@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function validate() {
+            var userId = document.forms["editForm"]["UserId"].value;
+            var option = document.forms["editForm"]["option"].value;
+
+            if (userId == "") {
+                alert("User id is required");
+                return false;
+            }
+            else if (option == "0") {
+                alert("Please choose an option");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form name="editForm" action="HtmlPage2.html" onsubmit="return validate();" method="get">
+        <label for="userId">User Id</label>
+        <input type="text" id="userId" name="UserId" value="" /><br />
+        <label for="availability">Are you available for session</label>
+        <input type="radio" name="availability" checked="checked" value="Yes">Yes
+        <input type="radio" name="availability" value="No">No
+
+        <select name="option">
+            <option value="0">Select</option>
+            <option value="India">India</option>
+            <option value="US">US</option>
+        </select>
+        <input type="submit" name="name" value="Save" />
+    </form>
+</body>
+</html>
