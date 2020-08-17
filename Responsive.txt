@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        img {
+            height: 50px;
+            float: left;
+        }
+
+        .header-text {
+            font-size: xx-large;
+            text-align: center;
+            height: 50px;
+            background-color: #fc6b03;
+        }
+        @media only screen and (max-width:600px) {
+            .header-text {
+                font-family: Verdana;
+                font-size: large;
+            }
+        }
+            nav {
+                height: 30px;
+                background-color: #47aee6;
+                text-align: right;
+            }
+
+            section {
+                border: solid 1px black;
+                height: 90vh;
+            }
+
+            footer {
+                height: 30px;
+                background-color: cornflowerblue;
+                color: white;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/cognizant.png" />
+        <div class="header-text">Some Website Name</div>
+    </header>
+    <nav>
+        <a href="https://www.google.com">Google</a> |
+        <a href="https://www.microsoft.com">Microsoft</a>
+    </nav>
+    <section>
+        <h1>Sample header</h1>
+        <p>Sample paragraph</p>
+    </section>
+
+    <footer>&copy; 2020</footer>
+</body>
+</html>
